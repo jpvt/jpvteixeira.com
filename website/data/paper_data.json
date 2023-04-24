@@ -1,0 +1,47 @@
+[{"title": "Interactive breast lesion designer for virtual trials based on Perlin noise",
+"authors": ["Magnus Dustler", "Hanna Tomic", "Anna Bjerken", "Anders Tingberg", "Pontus Timberg", "Sophia Zackrisson", 
+"Arthur Chaves Costa", "João P. V. Teixeira", "Bruno Barufaldi", "Predrag R. Bakic"],
+"conference": "Live Demonstrations Workshop, SPIE Medical Imaging, 2023, San Diego, California, United States",
+"year": 2023,
+"image": "live_demo.png",
+"links": {"🏆 Best Live Demo": ""}
+},
+{"title": "Spatial dependency of lesion detectability in digital breast tomosynthesis",
+  "authors": ["Chloe J. Choi", "Bruno Barufaldi", "João P. V. Teixeira", "Raymond J. Acciavatti", "Andrew D. A. Maidment"],
+  "conference": "16th International Workshop on Breast Imaging (IWBI2022)",
+  "year": 2022,
+  "image": "choi_iwbi.png",
+  "links": {"DOI": "https://doi.org/10.1117/12.2626272"}
+}, 
+{"title": "Multiclass segmentation of suspicious findings in simulated breast tomosynthesis images using a U-Net",
+  "authors": ["Yann Nobrega", "Giulia Carvalhal", "João P. V. Teixeira", "Barbara Camargo", "Thais G. do Rego", "Yuri Malheiros", "Telmo Filho",
+  "Trevor Vent", "Raymond J. Acciavatti", "Andrew D. A. Maidment", "Bruno Barufaldi"],
+  "conference": "16th International Workshop on Breast Imaging (IWBI2022)",
+  "year": 2022,
+  "image": "nobrega_carvalhal_iwbi.png",
+  "links": {"🏆 Top Scorer": "", "DOI": "https://doi.org/10.1117/12.2626225"}
+},
+{"title": "Novel Perlin-based phantoms using 3D models of compressed breast shapes and fractal noise",
+  "authors": ["João P. V. Teixeira", "Telmo Filho", "Thais G. do Rego", "Yuri Malheiros","Magnus Dustler", "Predrag R. Bakic", "Trevor Vent",
+  "Raymond J. Acciavatti",  "Srilalan Krishnamoorthy", "Suleman Surti","Andrew D. A. Maidment", "Bruno Barufaldi"],
+  "conference": "SPIE Medical Imaging, 2022, San Diego, California, United States",
+  "year": 2022,
+  "image": "teixeira_spie.png",
+  "links": {"DOI": "https://doi.org/10.1117/12.2612565"}
+},
+{"title": "Iris-CV: Classifying Iris Flowers Is Not as Easy as You Thought",
+  "authors": ["Itamar Filho", "João P. V. Teixeira", "João W. L. Lins", "Felipe Sousa", "Ana Sousa", "Manuel F. Junior",
+  "Thaís Ramos", "Cecília Silva","Thais G. do Rego", "Yuri Malheiros", "Telmo Filho"],
+  "conference": "BRACIS 2021",
+  "year": 2021,
+  "image": "rocha_bracis.png",
+  "links": {"DOI": "https://doi.org/10.1007/978-3-030-91699-2_18"}
+},
+{"title": "An Approach for Automatic Description of Characters for Blind People",
+  "authors": ["Itamar Filho", "Felipe Sousa", "João W. L. Lins", "João P. V. Teixeira", "Tiago Maritan"],
+  "conference": "WebMedia '21: Proceedings of the Brazilian Symposium on Multimedia and the Web",
+  "year": 2021,
+  "image": "rocha_webmedia.png",
+  "links": {"DOI": "https://doi.org/10.1145/3470482.3479617", "Videos": "https://imgur.com/a/melaw83"}
+}
+]
