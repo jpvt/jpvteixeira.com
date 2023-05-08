@@ -6,6 +6,36 @@
 #project_grid {
   padding-bottom: 60px; }
 
+/* nav bar */
+#nav-bar > h2 {
+	margin: 0;
+	font-size: 1em;
+}
+
+#nav-bar > h2 > a {
+	color: white;
+}
+
+#nav-bar > h2 > a:hover {
+	cursor: pointer;
+	animation: w2b 0.2s;
+	color: black;
+}
+
+#nav-bar {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	z-index: 1;
+	background-color: var(--accent_color);
+	color: white;
+	padding: 3px 10px;
+	border-radius: 15px;
+
+	display: flex;
+	gap: 5px;
+}
+
 /* research formatting */
 .research-image {
   background-image: url("../img/project_images/sos_hex.png");

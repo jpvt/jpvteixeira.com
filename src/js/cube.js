@@ -1,8 +1,12 @@
-//coordinates of vertices of the cube in 3-space
-let vertices = [[-1, 1, -1], [-1, 1, 1], [1, 1, 1], [1, 1, -1], [-1, -1, -1], [-1, -1, 1], [1, -1, 1], [1, -1, -1]]
+// Coordinates of vertices of the star prism in 3-space
+let vertices = [
+	[-1, 1, -1], [1, 1, -1], [1, 1, 1], [-1, 1, 1],
+	[0, 0, -2], [2, 0, 0], [0, 0, 2], [-2, 0, 0],
+	[-1, -1, -1], [1, -1, -1], [1, -1, 1], [-1, -1, 1]
+];
 
-//amount cube is rotated each frame, in radians
-const dTheta = 0.02
+// Amount diamond is rotated each frame, in radians
+const dTheta = 0.02;
 
 //defines coord system on plane, with vectors/points in 3 space
 //plane is defined to create isometric projection
@@ -17,44 +21,41 @@ window.addEventListener('load', function init() {
 });
 
 function updateSvg() {
-
-	//get size of svg element if not yet loaded
+	// Get size of svg element if not yet loaded
 	if (length == 0) {
-		length = document.getElementById("cube").getBoundingClientRect().width
+	  length = document.getElementById("cube").getBoundingClientRect().width;
 	}
-
-	svgSpacePts = []
-	//for each vertex
+  
+	svgSpacePts = [];
+	// For each vertex
 	for (let i = 0; i < vertices.length; i++) {
-		//rotate by dTheta
-		vertices[i] = rotateY(vertices[i], dTheta)
-
-		//compute point in plane space
-		let vertexVector = subtract(planeCenter, vertices[i])
-		let xCoord = dot(vertexVector, planeX)
-		let yCoord = dot(vertexVector, planeY)
-
-
-		//compute point in svg space
-		let transformLength = length/3.75
-		let xTrans = (transformLength * xCoord) + transformLength * 2
-		let yTrans = (-transformLength * yCoord) + transformLength * 2
-		svgSpacePts.push([xTrans, yTrans])
+	  // Rotate by dTheta
+	  vertices[i] = rotateY(vertices[i], dTheta);
+  
+	  // Compute point in plane space
+	  let vertexVector = subtract(planeCenter, vertices[i]);
+	  let xCoord = dot(vertexVector, planeX);
+	  let yCoord = dot(vertexVector, planeY);
+  
+	  // Compute point in svg space
+	  let transformLength = length / 3.75;
+	  let xTrans = transformLength * xCoord + transformLength * 2;
+	  let yTrans = -transformLength * yCoord + transformLength * 2;
+	  svgSpacePts.push([xTrans, yTrans]);
 	}
-
-	//create string for path from points in svg space
-	let firstPathPts = svgSpacePts.slice(0,4)
-	firstPathPts.push(svgSpacePts[0])
-	firstPathPts = firstPathPts.concat(svgSpacePts.slice(4,8))
-	firstPathPts.push(svgSpacePts[4])
-	let pathString = generatePathString(firstPathPts)
-	pathString += generatePathString([svgSpacePts[1], svgSpacePts[5]])
-	pathString += generatePathString([svgSpacePts[2], svgSpacePts[6]])
-	pathString += generatePathString([svgSpacePts[3], svgSpacePts[7]])
-
-	document.getElementById("cube_path").setAttribute("d", pathString)
-	window.requestAnimationFrame(updateSvg)
-}
+  
+	// Create string for path from points in svg space
+	let pathString = "";
+	pathString += generatePathString([svgSpacePts[0], svgSpacePts[4], svgSpacePts[1], svgSpacePts[5], svgSpacePts[2], svgSpacePts[6], svgSpacePts[3], svgSpacePts[7], svgSpacePts[0]]);
+	pathString += generatePathString([svgSpacePts[8], svgSpacePts[4], svgSpacePts[9], svgSpacePts[5], svgSpacePts[10], svgSpacePts[6], svgSpacePts[11], svgSpacePts[7], svgSpacePts[8]]);
+	pathString += generatePathString([svgSpacePts[0], svgSpacePts[8]]);
+	pathString += generatePathString([svgSpacePts[1], svgSpacePts[9]]);
+	pathString += generatePathString([svgSpacePts[2], svgSpacePts[10]]);
+	pathString += generatePathString([svgSpacePts[3], svgSpacePts[11]]);
+  
+	document.getElementById("cube_path").setAttribute("d", pathString);
+	window.requestAnimationFrame(updateSvg);
+  }
 
 //rotates point angle radians around y axis
 function rotateY(point, angle) {

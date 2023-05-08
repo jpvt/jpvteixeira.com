@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="public/css/homeStylesheet.css">
 	<link rel="stylesheet" href="public/css/generalStylesheet.css">
 	<link rel="stylesheet" href="public/css/darkmodeStylesheet.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+
 	<script src="src/js/cube.js"></script>
 	<script src="src/js/researchListBuilder.js"></script>
 	<script src="src/js/darkmode.js"></script>
@@ -14,6 +16,23 @@
 
 	<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Source+Code+Pro:wght@600;700&display=swap" rel="stylesheet">
 	<link rel="icon" href="favicon.png" sizes="32x32">
+	<style>
+        .social-icons {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+			justify-content: center;
+        }
+        .social-icons a {
+            font-size: 2em;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .social-icons a i {
+            color: #6802ed;
+        }
+    </style>
+    </style>
 </head>
 <body>
 	<div id="sidebar">
@@ -26,40 +45,20 @@
 				</svg>João Vasconcelos
 				</h1> 
 				<h2> Undergrad at Federal University of Paraíba, Brazil</h2>
-				<!-- inline svgs for icons. extracted from files in public/img/icons -->
-				<!-- <svg id="git"  viewBox="0 0 632.01 700">
-					<path class="cls-1" d="M225.67,676.93c0-18.34-.57-46.21-.57-84C111.84,613.81,82.53,565.35,73.52,540c-5.07-13-27-53-46.21-63.68C11.53,467.86-11,447,26.75,446.45c35.5-.57,60.85,32.68,69.31,46.21,40.57,68.18,105.37,49,131.3,37.19,3.94-29.3,15.77-49,28.74-60.3C155.79,458.28,51,419.4,51,247c0-49,17.47-89.6,46.2-121.15-4.5-11.27-20.28-57.48,4.51-119.47,0,0,37.76-11.83,124,46.21a425.14,425.14,0,0,1,225.4,0c86.22-58.6,124-46.21,124-46.21,24.79,62,9,108.2,4.5,119.47,28.74,31.55,46.21,71.56,46.21,121.15,0,173-105.38,211.32-205.68,222.59,16.34,14.09,30.43,41.14,30.43,83.4,0,60.3-.57,97.46-.57,124C429.94,698,248.47,696.52,225.67,676.93Z"/>
-				</svg> -->
 				<br>
-				<div id="email">
-					<svg id="email" data-name="email" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 632.01 700" height="20" width="20" >
-						<defs><style>.cls-1{fill:none;stroke:#6802ed;stroke-miterlimit:10;stroke-width:40;fill-rule:evenodd;}</style></defs>
-						<path class="cls-1" d="M225.67,676.93c0-18.34-.57-46.21-.57-84C111.84,613.81,82.53,565.35,73.52,540c-5.07-13-27-53-46.21-63.68C11.53,467.86-11,447,26.75,446.45c35.5-.57,60.85,32.68,69.31,46.21,40.57,68.18,105.37,49,131.3,37.19,3.94-29.3,15.77-49,28.74-60.3C155.79,458.28,51,419.4,51,247c0-49,17.47-89.6,46.2-121.15-4.5-11.27-20.28-57.48,4.51-119.47,0,0,37.76-11.83,124,46.21a425.14,425.14,0,0,1,225.4,0c86.22-58.6,124-46.21,124-46.21,24.79,62,9,108.2,4.5,119.47,28.74,31.55,46.21,71.56,46.21,121.15,0,173-105.38,211.32-205.68,222.59,16.34,14.09,30.43,41.14,30.43,83.4,0,60.3-.57,97.46-.57,124C429.94,698,248.47,696.52,225.67,676.93Z"/>
-					</svg>
-					<h2> 
-						<a href="https://github.com/jpvt" class="ext_link">jpvt</a>
-					</h2>	
-				</div>
-				<br>
-				<div id="email">
-					<svg width="24" height="24" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<title>Linkedin</title>
-						<g id="Icon/Social/linkedin-color" stroke="#6802ed" stroke-width="2" fill="none" fill-rule="evenodd">
-							<path d="M20.9716667,33.5527338 L25.001,33.5527338 L25.001,27.1328007 C25.001,25.439485 25.3213333,23.7988354 27.4206667,23.7988354 C29.491,23.7988354 29.517,25.7351486 29.517,27.2404662 L29.517,33.5527338 L33.5506667,33.5527338 L33.5506667,26.4341413 C33.5506667,22.9381777 32.796,20.2505391 28.711,20.2505391 C26.7483333,20.2505391 25.432,21.3265278 24.8943333,22.3471839 L24.839,22.3471839 L24.839,20.5725357 L20.9716667,20.5725357 L20.9716667,33.5527338 Z M16.423,14.1202696 C15.1273333,14.1202696 14.0823333,15.1682587 14.0823333,16.4595785 C14.0823333,17.7508984 15.1273333,18.7992208 16.423,18.7992208 C17.7133333,18.7992208 18.761,17.7508984 18.761,16.4595785 C18.761,15.1682587 17.7133333,14.1202696 16.423,14.1202696 L16.423,14.1202696 Z M14.4026667,33.5527338 L18.4406667,33.5527338 L18.4406667,20.5725357 L14.4026667,20.5725357 L14.4026667,33.5527338 Z M9.76633333,40 C8.79033333,40 8,39.2090082 8,38.2336851 L8,9.76631493 C8,8.79065843 8.79033333,8 9.76633333,8 L38.234,8 C39.2093333,8 40,8.79065843 40,9.76631493 L40,38.2336851 C40,39.2090082 39.2093333,40 38.234,40 L9.76633333,40 Z" id="Shape" fill="none"></path>
-						</g>
-					</svg>
-					<h2> 
-						<a href="https://www.linkedin.com/in/jpvt/" class="ext_link">in/jpvt</a>
-					</h2>	
-				</div>
-				<br>
-				<div id="email">
-					<svg id="mail" viewBox="0 0 766.08 700">
-						<rect class="st0" x="13.24" y="116.68" width="731.22" height="475.29" rx="29.84"/><path class="st0" d="M28.7,125.61,342.29,386.77a57.2,57.2,0,0,0,73.15,0L727.87,127.26"/><line class="st0" x1="31.72" y1="583.22" x2="281.52" y2="335.61"/><line class="st0" x1="725.4" y1="582.87" x2="475.87" y2="335.82"/>
-					</svg>	 
-					<h2> 
-						<a href="mailto:jpvteixeira99@gmail.com" class="ext_link">jpvteixeira99@gmail.com</a>
-					</h2>	
+				<div class="social-icons">
+					<a href="https://github.com/jpvt" target="_blank" rel="noopener noreferrer">
+						<i class="fab fa-github"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/jpvt" target="_blank" rel="noopener noreferrer">
+						<i class="fab fa-linkedin"></i>
+					</a>
+					<a href="https://twitter.com/jpvteixeira" target="_blank" rel="noopener noreferrer">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a href="mailto:jpvteixeira99@gmail.com">
+						<i class="fas fa-envelope"></i>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -84,15 +83,22 @@
     
 			In addition to my academic pursuits, I co-founded <a href="https://github.com/TailUFPB" class="ext_link">TAIL (Technology and Artificial Intelligence League), UFPB</a>. Our student-led research group is committed to spreading knowledge about artificial intelligence in our community. We aim to build a strong network of AI developers and foster collaboration among students from different backgrounds. <br><br>
 			
-			Outside the lab, I've gained valuable experience through internships at Amazon, and Rei do Pitaco, where I honed my skills in software development. I'm also a proud recipient of the Fundação Estudar Tech Fellow Program (One of 0.6% approved over 4285 applications in 2022), which has further inspired me to pursue a career in research and make a meaningful impact in the world. <br><br>
+			Outside the lab, I've gained valuable experience through internships at Amazon, and Rei do Pitaco, where I honed my skills in software development. I'm also a proud recipient of the Fundação Estudar Tech Fellow Program (One of 0.6% approved over 4285 applications in 2022). <br><br>
 		
 				In my spare time I like swimming, playing RPGs, and reading. <br><br>
 		
 				You can get in touch with me at <a href="mailto:jpvteixeira99@gmail.com" class="ext_link">jpvteixeira99@gmail.com</a>, visit my <a href="https://github.com/jpvt/" class="ext_link">GitHub</a>, or connect with me in <a href="https://www.linkedin.com/in/jpvt/" class="ext_link">Linkedin</a>. <br> 
 		</p>
 		
-		<h2 id="research">Research</h2>
-		<div id ="research-list">
+		<h2 id="research">
+			<a href="/research_projects.html" class="ext_link">Research<svg viewBox="0 0 350 350" class="link_arrow"> 
+					<line class="st0" x1="25" y1="325" x2="325" y2="25"/>
+					<path class="st0" d="M325,25"/>
+					<polyline class="st1" points="110,25 325,25 325,240 "/>
+				</svg>
+			</a>
+		</h2>
+		<div id ="research-list-short">
 		</div>
 		<h2 id="projects">
 			<a href="/projects.html" class="ext_link">Projects<svg viewBox="0 0 350 350" class="link_arrow"> 
@@ -105,6 +111,12 @@
 	</div>
 	
 	<p id="footer">
-			Adapted from <a href="https://github.com/zoemarschner/zoemarschner.com" class="ext_link">Zoë Marschner's code</a> / last updated April 2023</p>
+			Adapted from <a href="https://github.com/zoemarschner/zoemarschner.com" class="ext_link">Zoë Marschner's code</a> / last updated May 2023</p>
+
+	<div id="nav-bar"> 
+		<h2> 
+			<a href="jp_resume.pdf" id="resume_link"> Resume </a>
+		</h2>
+	</div>
 </body>
 </html>

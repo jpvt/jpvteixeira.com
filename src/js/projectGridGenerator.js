@@ -180,10 +180,18 @@ function processJson(jsonObj) {
 		index++
 
 		//create link element
-		let projectLink = document.createElement("a")
-		projectLink.classList.add("project_link")
-		projectLink.setAttribute("href", project.page_link)
-		outerDiv.appendChild(projectLink)
+		if (project.project_page){
+			let projectLink = document.createElement("a")
+			projectLink.classList.add("project_link")
+			projectLink.setAttribute("href", project.project_page)
+			outerDiv.appendChild(projectLink)
+		} else {
+			let projectLink = document.createElement("a")
+			projectLink.classList.add("project_link")
+			projectLink.setAttribute("href", project.page_link)
+			outerDiv.appendChild(projectLink)
+		}
+		
 
 		//add p of class tag for each tag
 		let tagDiv = document.createElement("div")
