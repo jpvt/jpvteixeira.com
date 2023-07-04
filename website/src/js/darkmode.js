@@ -15,7 +15,7 @@ window.addEventListener('load', function init() {
 
 window.addEventListener('DOMContentLoaded', function() {
 	if (localStorage.darkMode == undefined) {
-		localStorage.darkMode = false;
+		localStorage.darkMode = true;
 	}
 	update_darkmode(localStorage.darkMode === 'true');
 })
