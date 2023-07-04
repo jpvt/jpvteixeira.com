@@ -1,4 +1,12 @@
-[{"title": "Interactive breast lesion designer for virtual trials based on Perlin noise",
+[{"title": "Multiclass Segmentation of Breast Tissue and Suspicious Findings: A Simulation-Based Study for the Development of Self-Steering Tomosynthesis",
+"authors": ["Bruno Barufaldi", "Yann Nobrega", "Giulia Carvalhal", "João P. V. Teixeira",
+ "Thais G. do Rego", "Yuri Malheiros", "Telmo Filho", "Raymond J. Acciavatti", "Andrew D. A. Maidment"],
+"conference": "Tomography 9, no. 3: 1120-1132",
+"year": 2023,
+"image": "tomography_j.png",
+"links": {"DOI": "https://doi.org/10.3390/tomography9030092"}
+},
+{"title": "Interactive breast lesion designer for virtual trials based on Perlin noise",
 "authors": ["Magnus Dustler", "Hanna Tomic", "Anna Bjerken", "Anders Tingberg", "Pontus Timberg", "Sophia Zackrisson", 
 "Arthur Chaves Costa", "João P. V. Teixeira", "Bruno Barufaldi", "Predrag R. Bakic"],
 "conference": "Live Demonstrations Workshop, SPIE Medical Imaging, 2023, San Diego, California, United States",
