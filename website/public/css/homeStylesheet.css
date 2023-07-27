@@ -81,26 +81,40 @@
   outline: none;
   background-color: #EEE; }
 
-#sidebar {
-  position: fixed;
-  height: 100%;
-  width: 30rem;
-  top: 0;
-  bottom: 0;
-  left: 0; }
+  #sidebar {
+    position: fixed;
+    height: 100%;
+    width: 30rem;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto; /* Added */
+  }
+  
+  #main {
+    margin-left: 30rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-right: 7.5rem;
+    overflow-y: auto; /* Added */
+  }
+  
+  #sidebar-box {
+    position: relative; /* Change from absolute to relative */
+    top: 5em;
+    width: 65%;
+    margin-left: 25%;
+    margin-right: 10%;
+  }
 
-#main {
-  margin-left: 30rem;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  margin-right: 7.5rem; }
-
-#sidebar-box {
-  position: absolute;
-  top: 5em;
-  width: 65%;
-  margin-left: 25%;
-  margin-right: 10%; }
+  #sidebar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  #sidebar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
 
 #name {
   padding-top: 1rem;
