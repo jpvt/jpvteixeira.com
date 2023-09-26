@@ -34,7 +34,7 @@
       "Python", "Autoencoder", "Computer Vision", "🇬🇧 English"
     ],
     "height": 2,
-    "width": 2,
+    "width": 4,
     "priority": 2
  },
  {
@@ -53,7 +53,7 @@
       "Python", "Streamlit", "Noise", "🇬🇧 English"
     ],
     "height": 2,
-    "width": 2,
+    "width": 4,
     "priority": 3
  },
  {
@@ -91,7 +91,64 @@
         "ROS2 Humble", "Explore Lite","SLAM Toolbox", "Docker", "Robotics", "🇬🇧 English"
     ],
     "height": 2,
-    "width": 2,
+    "width": 4,
+    "priority": 3
+ },
+ {
+    "title": "The (in)accurate Gradients of Neural Representations",
+    "image": "INSR.png",
+    "body": [
+        {
+            "type": "p",
+            "content": "This project explored different methods to smooth the noisy gradients of Implicit Neural Spatial Representations for Time-dependent PDEs."
+        }
+
+    ],
+    "git_link": "https://github.com/SGI-2023/INSR-hybrid",
+    "project_page": "https://summergeometry.org/sgi2023/hybrid-neural-and-grid-representations/",
+    "tags": [
+        "Geometry", "Physics", "Neural PDEs", "🇬🇧 English"
+    ],
+    "height": 2,
+    "width": 4,
+    "priority": 3
+ },
+ {
+    "title": "Sampling Surfaces from Point Clouds",
+    "image": "sampsurfs.png",
+    "body": [
+        {
+            "type": "p",
+            "content": "This project uses Gaussian and Neural Processes to predict a distribution of possible surfaces of a given Point Cloud."
+        }
+
+    ],
+    "git_link": "https://github.com/SGI-2023/sampling-surfaces",
+    "project_page": "https://github.com/SGI-2023/sampling-surfaces",
+    "tags": [
+        "Geometry", "Gaussian Process", "Neural Process", "🇬🇧 English"
+    ],
+    "height": 2,
+    "width": 4,
+    "priority": 3
+ },
+ {
+    "title": "Exvivo surface mesh reconstruction from in-vivo FreeSurfer meshes",
+    "image": "closing.gif",
+    "body": [
+        {
+            "type": "p",
+            "content": "This project translated in-vivo MRI FreeSurfer meshes into ex-vivo meshes using a surface-based approach to close the deep sulci of the brain."
+        }
+
+    ],
+    "git_link": "https://github.com/SGI-2023/Invivo-Exvivo-2023",
+    "project_page": "https://summergeometry.org/sgi2023/exvivo-surface-mesh-reconstruction-from-in-vivo-freesurfer-meshes/",
+    "tags": [
+        "Geometry", "Closing Surface", "Medical Imaging", "🇬🇧 English"
+    ],
+    "height": 2,
+    "width": 4,
     "priority": 3
  }
 ]
