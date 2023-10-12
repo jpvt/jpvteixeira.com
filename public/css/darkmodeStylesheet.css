@@ -7,7 +7,7 @@
 *, a { color: white }
 
 body {
-	background-color: rgb(32, 33, 36);
+	background-color: rgb(0, 0, 0);
 }
 
 #projects > .ext_link:hover .link_arrow {
@@ -16,7 +16,7 @@ body {
 }
 
 #portrait {
-	background-color: rgb(50, 50, 55);
+	background-color: rgb(0, 0, 0);
 }
 
 @keyframes bluewhite {

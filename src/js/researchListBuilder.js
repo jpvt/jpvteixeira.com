@@ -64,7 +64,7 @@ function processResearchJson(jsonObj) {
 function shortResearchJson(jsonObj) {
 	let container = document.getElementById("research-list-short");
 
-	jsonObj.slice(0,3).forEach(function(paper) {
+	jsonObj.slice(0,5).forEach(function(paper) {
 		let outerDiv = document.createElement("div");
 		outerDiv.classList.add("research-container");
 

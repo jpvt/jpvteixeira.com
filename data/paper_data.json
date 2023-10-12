@@ -12,7 +12,7 @@
 "conference": "Live Demonstrations Workshop, SPIE Medical Imaging, 2023, San Diego, California, United States",
 "year": 2023,
 "image": "live_demo.png",
-"links": {"🏆 Best Live Demo": ""}
+"links": {"🏆 Best Live Demo": "demo_award.pdf"}
 },
 {"title": "Spatial dependency of lesion detectability in digital breast tomosynthesis",
   "authors": ["Chloe J. Choi", "Bruno Barufaldi", "João P. V. Teixeira", "Raymond J. Acciavatti", "Andrew D. A. Maidment"],
